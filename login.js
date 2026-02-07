@@ -6,7 +6,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
   // Demo credentials
   if (username === "admin" && password === "1234") {
-    localStorage.setItem("isLoggedIn", "true");
+    sessionStorageStorage.setItem("isLoggedIn", "true");
     window.location.href = "index.html";
   } else {
     document.getElementById("error-msg").innerText =
